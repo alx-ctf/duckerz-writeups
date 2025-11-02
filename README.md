@@ -3,4 +3,4 @@
 
 https://duckerz.ru/
 
-[REVERSE](/duckerz-writeups/reverse/reverse.md)
+[REVERSE](/reverse/reverse.md)
