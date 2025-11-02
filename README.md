@@ -3,4 +3,4 @@
 
 https://duckerz.ru/
 
-# КАТЕГОРИЯ "РЕВЕРС" !!!
+(REVERSE)[/workspaces/duckerz-writeups/reverse/reverse.md]
