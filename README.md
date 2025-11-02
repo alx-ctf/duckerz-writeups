@@ -3,4 +3,4 @@
 
 https://duckerz.ru/
 
-(REVERSE)[/workspaces/duckerz-writeups/reverse/reverse.md]
+[REVERSE](/duckerz-writeups/reverse/reverse.md)
