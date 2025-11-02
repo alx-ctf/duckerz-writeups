@@ -1,0 +1,18 @@
+from math import *
+
+flag = b"t-q*u*h\x1a@L\x00SGH`\x05o;`US\x13\x01%o\x0f\x03\x15X'jQB\x05"
+print('[*] Hello this is simple cipher program. Enter the message: ')
+message = str(input())
+if message == "Give me flag":
+    print("[*] where 'please'?")
+elif message == "Give me flag please":
+    print("[*] None. GLHF")
+key = "0x2a"
+list_output = []
+for i in range(0, len(message)):
+    list_output.append(chr(ord(message[i])^ord(key[i % len(key)])))
+
+str_ouput = ''.join(list_output)
+
+print('[*] This is your cipher text: ', str_ouput.encode())
+print('[*] This is flag output: ', flag)
