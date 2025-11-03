@@ -1,10 +1,8 @@
 s = "erpgmop5pmp+fA343v5345MPVrevpmMVi44voPMI"
-result = [0] * 41  # будем заполнять сюда
-
+result = [0] * 41
 for i in range(len(s)):
     c = ord(s[i])
-    
-    # Применяем операции в том же порядке, что и в C
+
     if (i & 1) == 0:
         c &= 0x19
         c ^= 0x22
@@ -24,7 +22,7 @@ for i in range(len(s)):
         c ^= 4
         c |= 6
 
-    # Теперь специальные кейсы
+#-----------------------------------------------
     if i == 6:
         c ^= 0x10
         c |= 0x20
@@ -116,8 +114,7 @@ for i in range(len(s)):
         c ^= 6
         c &= 0x7E
 
-    result[i] = c & 0xFF  # убедимся, что в пределах байта
-
+    result[i] = c & 0xFF  # убедимся что в пределах байта
 # Преобразуем в строку
 flag = ''.join(chr(b) for b in result if b != 0)
 print("DUCKERZ{" + flag + "}")
